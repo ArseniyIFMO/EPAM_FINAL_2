@@ -1,28 +1,51 @@
 package com.epam.casino;
 
-public class Account {
-    int amountOfMoney;
+/**
+ * This is your account
+ *
+ */
 
+
+public class Account {
+    private int amountOfMoney;
+    private static final Object key = new Object();
+
+    /**
+     * This function return amount of money on your account
+     * @return amount of money
+     */
+    public int getAmountOfMoney() {
+        return amountOfMoney;
+
+    }
+
+    /**
+     * This function add money to your account
+     * @param x - amount of money to add
+     * @return - new balance
+     */
+    public int add(int x){
+        amountOfMoney += x;
+        return amountOfMoney;
+
+    }
+
+    /**
+     * This function extract some eamount of money from your account
+     * @param x - amount of money to extracy
+     * @return nre amount of money
+     */
+    public int extract(int x){
+        amountOfMoney -= x;
+        return amountOfMoney;
+    }
+
+    /**
+     * Construct account with some amount of money
+     * @param startingMoney  - starting amount of money on your account
+     */
     public Account(int startingMoney) {
         amountOfMoney = startingMoney;
     }
 
-    public void betOnHorse(int horseNumber, int valueBet, Race raceToBet) {
-        if (valueBet > amountOfMoney) {
-            System.out.print("Not enough money");
-        } else {
-            /*
-            Future <Integer> ourSurplus = new Future <Integer>();
-            ExecutorService exe = Executors.newFixedThreadPool(10);
-            ourSurplus = exe.submit( new Race() );
-            try {
-                amountOfMoney += ourSurplus.get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
-            */
-        }
-    }
 }
