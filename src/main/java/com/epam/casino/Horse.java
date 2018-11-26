@@ -8,6 +8,7 @@ public class Horse {
 
     /**
      * This method for getting speed of horse
+     *
      * @return speed of horse
      */
     public int getSpeed() {
@@ -16,6 +17,7 @@ public class Horse {
 
     /**
      * This method construct new horse with some speed
+     *
      * @param speed - speed of this horse
      */
     public Horse(int speed) {

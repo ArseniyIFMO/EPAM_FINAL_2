@@ -16,7 +16,6 @@ import java.util.concurrent.*;
  * and when race ends you get message
  * you could make next bet until previous is finished
  * as races starts not immediatly, i wrapped them into future
- *
  */
 
 public class Casino {
