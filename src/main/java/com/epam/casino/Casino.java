@@ -36,7 +36,7 @@ public class Casino {
         x = scanner.nextInt();
         Account yourAcc = new Account(x);
         System.out.println("Hi, i would tell you what races are avaliable now, if you want to bet play ");
-        while (yourAcc.getAmountOfMoney() != 0) {
+        while ((yourAcc.getAmountOfMoney() != 0) || (!currentRaces.isEmpty())) {
             horsesToRace = new ArrayList<>();
             for (int i = 0; i < horsesInRace; i++) {
                 horsesToRace.add(new Horse(randomiser.nextInt(100)));
