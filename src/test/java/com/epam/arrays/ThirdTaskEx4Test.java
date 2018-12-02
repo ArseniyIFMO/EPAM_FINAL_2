@@ -6,7 +6,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class ThirdTaskEx4Test {
     @Test
-    public void test1() {
+    public void testPrintSymbolsOnEvenPossitions() {
         char[][] b = new char[3][];
         b[0] = new char[]{'a', 'b', 'c'};
         b[1] = new char[]{'d', 'e', 'f'};

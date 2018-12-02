@@ -8,7 +8,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class ThirdTaskEx5Test {
     @Test
-    public void test1() throws IOException {
+    public void testPrintSymbolsOnOddPossitions() throws IOException {
         String ans = ThirdTaskEx5.printSymbolsOnOddPossitions(new char[][]{{'a', 'b', 'c'}, {'d', 'e', 'f'}, {'g', 'h', 'i'}});
         assertEquals("beh", ans);
     }

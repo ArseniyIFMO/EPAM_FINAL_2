@@ -8,17 +8,11 @@ import static junit.framework.TestCase.assertEquals;
 
 public class FactorialTest {
     @Test
-    public void testZeroFactorial() throws IOException {
+    public void testEvaluate() throws IOException {
         assertEquals(1, Factorial.evaluate(0));
-    }
 
-    @Test
-    public void test2() throws IOException {
         assertEquals(1, Factorial.evaluate(1));
-    }
 
-    @Test
-    public void test3() throws IOException {
         assertEquals(6, Factorial.evaluate(3));
     }
 }
